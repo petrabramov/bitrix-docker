@@ -5,11 +5,6 @@
 ## Установка
 1. Склонировать репозиторий
 2. Создать файл .env и определить в нем переменные окружения `cp .env.copy .env`
-3. С помощью docker-compose развернуть инфраструктуру `docker-compose up --build -d`
-
-## Список необходимых переменных окружения
-- `SITE_PATH` - путь до директории с приложением (как правило - веб-директория)
-- `MYSQL_ROOT_PASSWORD` - "рутовый" пароль для mysql
-- `MYSQL_USER` - пользователь mysql для Битрикс
-- `MYSQL_PASSWORD` - пароль пользователя Битрикс
-- `MYSQL_DATABASE` - наименование БД для Битрикс
+3. Скачать актуальный инсталятор `curl https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php --output bitrix/bitrixsetup.php`
+4. С помощью docker-compose развернуть инфраструктуру `docker-compose up --build -d`
+5. Запустить в браузере http://127.0.0.1/bitrixsetup.php (настройка битрикс)
